@@ -28,7 +28,6 @@ public class C07_Assertion {
         driver.close();
     }
     /*
-​
     2)https://amazon.com adresinegidin
     3)Aşağıdaki adları kullanarak 3 test metodu oluşturun ve gerekli testleriyapin
             ○ title Test  => Sayfa başlığının “Amazon” oldugunu test edin
@@ -42,11 +41,11 @@ public class C07_Assertion {
         String expectedTitle = "Amazon";
         Assert.assertTrue(actualTitle.contains(expectedTitle));
     }
-//    @Test
-//    public void test02(){
-//        WebElement sayfaResmi = driver.findElement(By.id("nav-logo-sprites"));
-//        Assert.assertTrue(sayfaResmi.isDisplayed());
-//    }
+    @Test
+    public void test02(){
+        WebElement sayfaResmi = driver.findElement(By.id("nav-logo-sprites"));
+        Assert.assertTrue(sayfaResmi.isDisplayed());
+    }
     @Test
     public void test03(){
         WebElement searchBox = driver.findElement(By.xpath("//*[@id='twotabsearchtextbox']"));
