@@ -1,4 +1,4 @@
-package day5_JUnit;
+package Instruct_Selenium.day5_JUnit;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
