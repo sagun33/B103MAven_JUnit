@@ -48,29 +48,32 @@ public class HW06 extends TestBase {
         //“email” onay kutusuna emaili tekrar yazin
         //Bir sifre girin
 
-        WebElement name=driver.findElement(By.id("u_3_b_K4")).sendKeys();
-        name.sendKeys(isim, Keys.TAB,soyisim,Keys.TAB,eMail,Keys.TAB,password,Keys.TAB,password,Keys.TAB);
+       driver.findElement(By.name("firstname")).sendKeys(isim,Keys.TAB,soyisim,Keys.TAB,eMail,Keys.TAB,password);
+
+
+
+
 
 
         //Tarih icin gun secin
         //Tarih icin ay secin
         //Tarih icin yil secin
 
-        WebElement month=driver.findElement(By.id("Month"));
-        WebElement day=driver.findElement(By.id("Day"));
-        WebElement year=driver.findElement(By.id("Year"));
+        WebElement month=driver.findElement(By.id("month"));
+        WebElement day=driver.findElement(By.id("day"));
+        WebElement year=driver.findElement(By.id("year"));
 
         selectFromDropdown(month,"09");
         selectFromDropdown(day,"27");
         selectFromDropdown(year,"1982");
 
          //Cinsiyeti secin
-        WebElement male=driver.findElement(By.xpath("(//*[@name='sex'])[2]"));
+        WebElement male=driver.findElement(By.xpath("//*[@id='u_3_5_fB']"));
         male.click();
 
         //Isaretlediginiz cinsiyetin secili, diger cinsiyet kutusunun secili olmadigini test edin.
-        WebElement fMale=driver.findElement(By.xpath("(//*[@name='sex'])[1]"));
-        WebElement custom=driver.findElement(By.xpath("(//*[@name='sex'])[3]"));
+        WebElement fMale=driver.findElement(By.xpath("//*[@id='u_3_4_zn']"));
+        WebElement custom=driver.findElement(By.xpath("//*[@id='u_3_6_XN']"));
         Assert.assertTrue(male.isSelected());
         Assert.assertFalse(fMale.isSelected());
         Assert.assertFalse(custom.isSelected());
