@@ -1,12 +1,9 @@
-package SeleniumStudy.day_06_selenium;
+package SeleniumStudy.day_07_selenium;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.checkerframework.checker.units.qual.A;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
-public class Q06 {
+public class Q01 {
     ///* Given kullanici "https://editor.datatables.net/" sayfasina gider
     //    Then new butonuna basar
     //    And editor firstname kutusuna "<firstName>" bilgileri girer
