@@ -27,12 +27,14 @@ public class p24_UploadFile extends TestBase {
 
         String dosyaYolu = "C:\\Users\\Lenovo\\OneDrive\\Masaüstü\\sen.txt";
 
+
         WebElement dosyaSec = driver.findElement(By.xpath("//*[@id='uploadfile_0']"));
         dosyaSec.sendKeys(dosyaYolu);
         // I accept terms of service bölümünü tikleyin
         WebElement checkBox =  driver.findElement(By.xpath("//*[@id='terms']"));
         checkBox.click();
         checkBox.sendKeys(Keys.TAB,Keys.TAB,Keys.ENTER);
+
         // Submit File buttonuna basınız
         // "1 file has been successfully uploaded" görünür olduğunu test edin
     }
