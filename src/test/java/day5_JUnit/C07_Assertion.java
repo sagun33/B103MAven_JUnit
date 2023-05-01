@@ -28,7 +28,7 @@ public class C07_Assertion {
         driver.close();
     }
     /*
-​
+
     2)https://amazon.com adresinegidin
     3)Aşağıdaki adları kullanarak 3 test metodu oluşturun ve gerekli testleriyapin
             ○ title Test  => Sayfa başlığının “Amazon” oldugunu test edin

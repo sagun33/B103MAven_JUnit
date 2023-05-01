@@ -13,6 +13,7 @@ public class Q106012023 extends TestBase {
     //3) Click on Shop Menu
     //4) Now click on Home menu button
     //5) Test whether the Home page has Three Sliders only
+
     //6) The Home page must contain only three sliders
 
     @Test
